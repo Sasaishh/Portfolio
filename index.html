@@ -1,0 +1,260 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }body {
+  background: #0d0d0d;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100;
+  padding-top: 100px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  
+}
+
+.hero-text span {
+  color: #00ffae;
+}
+
+.hero-text p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #00ffae;
+  color: #00ffae;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00ffae;
+  color: black;
+}
+
+.hero-img {
+  width: 40%;
+  text-align: right;
+}
+
+.hero-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.skills {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.skill-box {
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.skill-box h3 {
+  margin-bottom: 10px;
+}
+
+.projects {
+  margin: 50px 0;
+}
+
+.projects h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+
+@media(max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-text, .hero-img {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.links {
+  text-align: right;
+  padding-right: 20px;
+  color: #aaa;
+}
+
+.navbar {
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.skill-box {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+</style>
+</head>
+<body>  
+
+  <div class="main">
+ <div class="navbar">
+        <u><h1>My Portfolio</h1></u>
+
+        <div class="links">
+            <U><a href="#">About</a></U>
+            <u><a href="#">Projects</a></u>
+            <u><a href="#">Blog</a></u>
+            <u><a href="#">Contact</a></u>
+
+        </div>
+    </div>
+
+<div class="container">
+<section class="hero">
+  <div class="hero-text">
+    <h1>Nice to meet you! <br>I'm <span>Satakshi Aishwary</span></h1>
+    <p>I am a B.Tech CSE student passionate about building web applications.I am a Web developer and I love building simple and beautiful websites. I am currently learning web development and improving my skills.</p>
+    <br>
+    <br>
+    <a href="#" class="btn">Contact Me </a>
+      <br>
+      <br>
+    
+
+  <div class="buttons">
+                <button class="btn1">View LinkedIn</button>
+                <button class="btn2">View Github</button>
+  </div>
+
+  <div class="hero-img">
+    <img src="your-photo.jpg" alt="profile">
+  </div>
+</section>
+<hr>
+<br>
+
+<section class="skills">
+  <u><h1>Skills</h1></u>
+  <br>
+<br>
+  
+<div class="skills-grid">
+<div class="skill-box">
+    <h3>HTML</h3>
+  </div>
+  <div class="skill-box">
+    <h3>CSS</h3>
+  </div>
+  <div class="skill-box">
+    <h3>JavaScript</h3>
+  </div>
+  <div class="skill-box">
+    <h3>Python</h3>
+  </div>
+  </div>
+  
+</section>
+
+<hr>
+
+<div class="projects">
+  <u><h2>Projects</h2></u>
+
+    <div class="project-grid">
+      <div class="project-card">
+       <h3>Menue Card</h3>
+       <p>A simple food menue using HTML &  CSS.</p>
+        <a href="#">View Project</a>
+      </div>
+                
+      <div class="project-card">
+        <h3>Registration Form</h3>
+        <p>A simple Registration form using HTML & CSS</p>
+        <a href="#">View Project</a>
+        </div> 
+        </div>
+
+  </div>  <footer>
+    <p>© 2026 Your Name</p>
+  </footer></body>
+</html>
